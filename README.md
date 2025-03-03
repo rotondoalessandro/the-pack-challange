@@ -1,38 +1,30 @@
-# sv
+# The Pack Challenge
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Project Stack
 
-## Creating a project
+Developed in Svelte, with PostgreSQL for the database, and file storage hosted on Supabase. The connection to the database is managed through Prisma.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Installation
 
-```bash
-# create a new project in the current directory
-npx sv create
+1. Install dependencies:
+   ```sh
+   npm i
+   ```
 
-# create a new project in my-app
-npx sv create my-app
-```
+2. Create a `.env` file and add your database connection string sent via e-mail.
 
-## Developing
+3. Generate Prisma client:
+   ```sh
+   npx prisma generate
+   ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-```bash
-npm run dev
+## GitHub Repository
+[The Pack Challenge - GitHub](https://github.com/rotondoalessandro/the-pack-challange)
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Deployment
+[Live on Vercel](https://the-pack-challenge.vercel.app/)
