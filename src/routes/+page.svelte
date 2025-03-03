@@ -116,8 +116,8 @@
   </button>
 
   {#if showFileUpload}
-    <div class="fixed inset-0 flex items-center justify-center z-50 mt-12 mb-12">
-      <div class="bg-white p-6 rounded shadow-lg max-w-md w-full relative">
+    <div class="fixed inset-0 flex items-start justify-center z-50 overflow-y-auto">
+      <div class="bg-white p-6 rounded shadow-lg max-w-md w-full relative mt-20 mb-20 max-h-screen">
         <button
           on:click={toggleFileUpload}
           class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
